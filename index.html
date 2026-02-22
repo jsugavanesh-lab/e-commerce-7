@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntiGravity AI Store | Future of Commerce</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="navOverlay"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">AntiGravity <span class="accent">AI</span></span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-links mobile-nav">
+                <button class="nav-btn active" data-section="home">Home</button>
+                <button class="nav-btn" data-section="home1">Home 1</button>
+                <button class="nav-btn" data-section="mission">Mission</button>
+                <button class="nav-btn" data-section="news">News</button>
+                <button class="nav-btn" data-section="shop">Shop</button>
+                <button class="nav-btn" data-section="support">Support</button>
+                <button class="nav-btn" data-section="careers">Careers</button>
+                <button class="nav-btn" data-section="dashboard">Dashboard</button>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" onclick="toggleTheme()"><i
+                        class="fa-solid fa-moon"></i></button>
+                <button class="icon-btn" id="cart-drawer-btn" onclick="toggleCart()"><i
+                        class="fa-solid fa-cart-shopping"></i><span class="badge" id="cartCount"
+                        style="display: none;"></span></button>
+                <button class="icon-btn" id="user-btn" onclick="showSection('profile')"><i
+                        class="fa-solid fa-user"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <h1 class="fade-in">Experience the <br><span class="gradient-text">Future of Shopping</span>
+                        </h1>
+                        <p class="fade-in delay-1">Step into the next generation of e-commerce. Powered by AntiGravity
+                            AI, we bridge the gap between imagination and reality with autonomous delivery and
+                            intelligent hardware.</p>
+                        <div class="hero-btns fade-in delay-2" style="margin-top: 30px;">
+                            <button class="btn btn-primary"
+                                onclick="document.querySelector('[data-section=\'shop\']').click()">Explore Products <i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                            <button class="btn btn-outline">Watch Demo</button>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrapper fade-in delay-3">
+                        <div class="hero-blob"></div>
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800"
+                            alt="AI Technology" class="hero-img">
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <div class="mouse"></div>
+                </div>
+            </div>
+
+            <!-- Core Pillars -->
+            <div class="container py-large">
+                <div class="grid grid-2 gap-60 items-center">
+                    <div class="image-stack fade-in">
+                        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800"
+                            alt="Autonomous Drone Delivery"
+                            style="border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.4); width: 100%;">
+                    </div>
+                    <div class="text-block fade-in delay-1">
+                        <span class="tag">Next-Gen Logistics</span>
+                        <h2>Autonomous <span class="gradient-text">Drone Delivery</span></h2>
+                        <p>Our drone fleet is optimized for silent, rapid atmospheric entry and precise landing on any
+                            designated coordinates. Whether you're in a high-rise city center or a remote research
+                            station, AntiGravity ensures your artifacts arrive pristine and perfectly synced.</p>
+                        <ul style="list-style: none; padding: 0; margin-top: 25px;">
+                            <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 12px;"><i
+                                    class="fa-solid fa-check-circle" style="color: var(--accent-primary);"></i> 15
+                                Minute Global Delivery Target</li>
+                            <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 12px;"><i
+                                    class="fa-solid fa-check-circle" style="color: var(--accent-primary);"></i>
+                                Encrypted Cargo Containers</li>
+                            <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 12px;"><i
+                                    class="fa-solid fa-check-circle" style="color: var(--accent-primary);"></i>
+                                Real-time Neural Tracking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-darker py-large">
+                <div class="container text-center">
+                    <div class="section-header">
+                        <span class="tag">Global Reach</span>
+                        <h2>Our <span class="gradient-text">Infrastructure</span></h2>
+                    </div>
+                    <div class="grid grid-4 gap-30 mt-large">
+                        <div class="stat-card glass-card">
+                            <h3 class="accent-text">124</h3>
+                            <p>Orbital Stations</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h3 class="accent-text">5.2M</h3>
+                            <p>Active Neuro-links</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h3 class="accent-text">99.9%</h3>
+                            <p>Sync Uptime</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h3 class="accent-text">Zero</h3>
+                            <p>Carbon Emission</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Innovation Lab Section -->
+            <div class="innovation-lab py-large">
+                <div class="container">
+                    <div class="grid grid-2 gap-60 items-center">
+                        <div class="lab-content fade-in">
+                            <span class="tag">Behind the Science</span>
+                            <h2>The <span class="gradient-text">AntiGravity Lab</span></h2>
+                            <p class="mt-medium">At the heart of our operations lies the Innovation Lab, where the laws
+                                of physics are treated as mere suggestions. We specialize in three core domains that
+                                define the next era of human capability.</p>
+
+                            <div class="lab-feature mt-large">
+                                <div class="lab-pill glass-card p-medium"
+                                    style="margin-bottom: 20px; display: flex; gap: 20px; align-items: start;">
+                                    <img src="https://images.unsplash.com/photo-1628595351029-c2bf17511435?auto=format&fit=crop&q=80&w=120"
+                                        alt="Molecular Stabilization" class="lab-pill-img">
+                                    <div>
+                                        <h4 style="margin: 0;">Molecular Stabilization</h4>
+                                        <p style="font-size: 14px; color: var(--text-secondary); margin-top: 5px;">Our
+                                            proprietary field generator ensures that digital artifacts maintain
+                                            structural integrity during trans-dimensional logistics.</p>
+                                    </div>
+                                </div>
+                                <div class="lab-pill glass-card p-medium"
+                                    style="margin-bottom: 20px; display: flex; gap: 20px; align-items: start;">
+                                    <img src="https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&q=80&w=120"
+                                        alt="Bio-Neural Sync" class="lab-pill-img">
+                                    <div>
+                                        <h4 style="margin: 0;">Bio-Neural Sync</h4>
+                                        <p style="font-size: 14px; color: var(--text-secondary); margin-top: 5px;">The
+                                            bridge between raw processing power and intuitive human intent. We don't
+                                            just process data; we synchronize consciousness.</p>
+                                    </div>
+                                </div>
+                                <div class="lab-pill glass-card p-medium"
+                                    style="display: flex; gap: 20px; align-items: start;">
+                                    <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=120"
+                                        alt="Zero-Point Energy" class="lab-pill-img">
+                                    <div>
+                                        <h4 style="margin: 0;">Zero-Point Energy</h4>
+                                        <p style="font-size: 14px; color: var(--text-secondary); margin-top: 5px;">
+                                            Harnessing the vacuum of space to provide infinite power to our global and
+                                            orbital infrastructure.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lab-visual fade-in delay-1">
+                            <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&q=80&w=800"
+                                alt="Research Lab Visual"
+                                style="border-radius: var(--radius-lg); width: 100%; height: 600px; object-fit: cover; box-shadow: 0 40px 80px rgba(0,0,0,0.5);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Global Relay Network -->
+            <div class="container py-large">
+                <div class="grid grid-2 gap-60 items-center">
+                    <div class="text-block fade-in">
+                        <span class="tag">Connectivity</span>
+                        <h2>Global <span class="gradient-text">Data Relay</span></h2>
+                        <p>Our terrestrial relays are strategically positioned to ensure continuous neural
+                            synchronization. Using proprietary 'Quantum Entanglement' protocols, we maintain a stable
+                            connection even during severe solar flair activity.</p>
+                        <div class="mt-medium">
+                            <div style="display: flex; gap: 20px; align-items: start; margin-bottom: 25px;">
+                                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=400"
+                                    alt="Orbital Mesh" class="feature-icon-img">
+                                <div>
+                                    <h4 style="margin: 0;">Orbital Mesh</h4>
+                                    <p style="font-size: 14px; color: var(--text-secondary);">1,200 low-orbit satellites
+                                        providing sub-millisecond response.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 20px; align-items: start;">
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400"
+                                    alt="Ground Hubs" class="feature-icon-img">
+                                <div>
+                                    <h4 style="margin: 0;">Ground Hubs</h4>
+                                    <p style="font-size: 14px; color: var(--text-secondary);">Localized hubs in every
+                                        major city for high-density traffic.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-block fade-in delay-1">
+                        <img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=800&q=80"
+                            alt="Satellite Relay Network"
+                            style="border-radius: var(--radius-lg); width: 100%; box-shadow: 0 30px 60px rgba(0,0,0,0.5);">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="testimonials py-large">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="tag">User Feedback</span>
+                        <h2>The Voice of the <span class="gradient-text">Future</span></h2>
+                    </div>
+                    <div class="grid grid-3 gap-30 mt-large">
+                        <div class="testimonial-card card glass-card">
+                            <p style="font-style: italic; color: var(--text-secondary);">"The latency of the new Neural
+                                Watch is non-existent. It feels like an extension of my own body. Truly revolutionary."
+                            </p>
+                            <div class="user-meta mt-medium" style="display: flex; align-items: center; gap: 15px;">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100"
+                                    alt="Sarah Chen"
+                                    style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-primary);">
+                                <div>
+                                    <strong style="display: block;">Sarah Chen</strong>
+                                    <span style="font-size: 13px; color: var(--text-muted);">Quantum Architect</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card card glass-card">
+                            <p style="font-style: italic; color: var(--text-secondary);">"AntiGravity drones delivered
+                                my AI core to the Martian outpost in record time. The hardware arrived perfectly
+                                calibrated."</p>
+                            <div class="user-meta mt-medium" style="display: flex; align-items: center; gap: 15px;">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=100"
+                                    alt="Marcus Vane"
+                                    style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-primary);">
+                                <div>
+                                    <strong style="display: block;">Marcus Vane</strong>
+                                    <span style="font-size: 13px; color: var(--text-muted);">Mars Pioneer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card card glass-card">
+                            <p style="font-style: italic; color: var(--text-secondary);">"The security protocols give me
+                                peace of mind. My neural data is completely private, encrypted at the hardware level."
+                            </p>
+                            <div class="user-meta mt-medium" style="display: flex; align-items: center; gap: 15px;">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=100"
+                                    alt="Elena Rossi"
+                                    style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-primary);">
+                                <div>
+                                    <strong style="display: block;">Elena Rossi</strong>
+                                    <span style="font-size: 13px; color: var(--text-muted);">Cyber Ethicist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home 1 Section -->
+        <section id="home1" class="section">
+            <div class="alt-hero py-large">
+                <div class="container hero-container items-center">
+                    <div class="hero-image-wrapper fade-in">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=800"
+                            alt="Home 1" class="hero-img" style="border-radius: var(--radius-lg);">
+                    </div>
+                    <div class="hero-content">
+                        <span class="tag">Collection 2026</span>
+                        <h1 class="fade-in">Neural <br><span class="gradient-text">Architecture</span></h1>
+                        <p class="fade-in delay-1">Advanced hardware for the digital pioneer. AntiGravity is not just
+                            about moving objects; it's about shifting paradigms. Our latest collection features
+                            integrated neural interfaces that blur the lines between human intent and machine execution.
+                            Home 1 is the culmination of a decade of research into bio-digital synchronization,
+                            offering a seamless transition from thought to interaction in your most intimate spaces.
+                        </p>
+                        <p class="fade-in delay-1" style="font-size: 14px; color: var(--text-muted); margin-top: 15px;">
+                            Designed with minimalist aesthetics and maximum processing power, it represents the
+                            pinnacle of domestic AI integration.
+                        </p>
+                        <div class="hero-btns fade-in delay-2" style="margin-top: 20px;">
+                            <button class="btn btn-secondary">Shop the Look</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-banner py-large">
+                <div class="container banner-grid">
+                    <div class="stat-item fade-in">
+                        <h3>99%</h3>
+                        <span>Precision Sync</span>
+                    </div>
+                    <div class="stat-item fade-in delay-1">
+                        <h3>&lt; 2ms</h3>
+                        <span>Response Latency</span>
+                    </div>
+                    <div class="stat-item fade-in delay-2">
+                        <h3>100%</h3>
+                        <span>Carbon Neutral</span>
+                    </div>
+                    <div class="stat-item fade-in delay-3">
+                        <h3>24/7</h3>
+                        <span>AI Monitoring</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Material Science -->
+            <div class="container py-large">
+                <div class="grid grid-2 gap-60 items-center">
+                    <div class="info-text">
+                        <span class="tag">Technical Integrity</span>
+                        <h2>Engineered for <span class="gradient-text">Immersion</span></h2>
+                        <p>Every component in the Home 1 series is built with surgical precision. We utilize
+                            graphene-composite housings and superconductors that operate at ambient temperatures,
+                            ensuring your hardware remains cool and efficient during intensive neural processing tasks.
+                        </p>
+                        <div class="spec-grid mt-medium">
+                            <div class="spec-item">
+                                <label>Processor</label>
+                                <p>Aegis Quantum v4</p>
+                            </div>
+                            <div class="spec-item">
+                                <label>Bandwidth</label>
+                                <p>1.2 TB/s Neural Link</p>
+                            </div>
+                            <div class="spec-item">
+                                <label>Latency</label>
+                                <p>0.8ms Core Response</p>
+                            </div>
+                            <div class="spec-item">
+                                <label>Material</label>
+                                <p>Graphene Composite</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-visual">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
+                            alt="Tech Detail"
+                            style="border-radius: var(--radius-lg); width: 100%; height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Section: Core Capabilities -->
+            <div class="bg-darker py-large">
+                <div class="container">
+                    <div class="grid grid-3 gap-30">
+                        <div class="feature-detail glass-card">
+                            <h4 class="accent-text mb-medium">01. Cognitive Sync</h4>
+                            <p>Our proprietary sync-engine maps your neural patterns in real-time, creating a 1:1
+                                digital reflection of your intent. This allows for near-instant control of all
+                                smart-home systems through simple cognitive visualization.</p>
+                        </div>
+                        <div class="feature-detail glass-card">
+                            <h4 class="accent-text mb-medium">02. Spatial Awareness</h4>
+                            <p>Home 1 utilizes Lidar 4.0 and ultrasonic arrays to understand the environment.
+                                It doesn't just see the room; it understands the volume, temperature, and
+                                emotional resonance of every square inch.</p>
+                        </div>
+                        <div class="feature-detail glass-card">
+                            <h4 class="accent-text mb-medium">03. Adaptive Learning</h4>
+                            <p>The core doesn't just follow commands; it anticipates needs. By analyzing routine
+                                and biometric data, Home 1 optimizes your environment for productivity,
+                                rest, or creative flow before you even ask.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intuitive Interface Section -->
+            <div class="container py-large">
+                <div class="grid grid-2 gap-60 items-center">
+                    <div class="visual-placeholder glass-card"
+                        style="height: 400px; display: flex; align-items: center; justify-content: center; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800'); background-size: cover; border-radius: var(--radius-lg);">
+                        <i class="fa-solid fa-wand-magic-sparkles"
+                            style="font-size: 64px; color: var(--accent-primary); opacity: 0.5;"></i>
+                    </div>
+                    <div class="text-block">
+                        <span class="tag">Interface Design</span>
+                        <h2>Invisible <span class="gradient-text">Interaction</span></h2>
+                        <p>We believe the best interface is no interface at all. Home 1 removes the middleman—no
+                            screens,
+                            no buttons, no voice commands necessary. By utilizing a low-latency neural bridge, your
+                            home becomes an extension of your own biology.</p>
+                        <p class="mt-medium">Whether you're adjusting the atmospheric lighting to match your focus level
+                            or initiating a security lockdown with a thought, the response is immediate and natural.</p>
+                        <ul style="list-style: none; padding: 0; margin-top: 25px;">
+                            <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 12px;"><i
+                                    class="fa-solid fa-circle-check" style="color: var(--accent-primary);"></i>
+                                Zero-Latency Thought Execution</li>
+                            <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 12px;"><i
+                                    class="fa-solid fa-circle-check" style="color: var(--accent-primary);"></i>
+                                Minimalist Aesthetic Integration</li>
+                            <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 12px;"><i
+                                    class="fa-solid fa-circle-check" style="color: var(--accent-primary);"></i>
+                                Biometric Encryption Protocols</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hardware Immersion Gallery -->
+            <div class="hardware-gallery py-large bg-darker">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="tag">The Details</span>
+                        <h2>Hardware <span class="gradient-text">Immersion</span></h2>
+                    </div>
+                    <div class="grid grid-3 gap-20 mt-large">
+                        <div class="gallery-item glass-card" style="padding: 0; overflow: hidden; height: 300px;">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600"
+                                alt="Hardware Detail 1"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                        </div>
+                        <div class="gallery-item glass-card" style="padding: 0; overflow: hidden; height: 300px;">
+                            <img src="https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&q=80&w=600"
+                                alt="Hardware Detail 2"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                        </div>
+                        <div class="gallery-item glass-card" style="padding: 0; overflow: hidden; height: 300px;">
+                            <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80&w=600"
+                                alt="Hardware Detail 3"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission" class="section">
+            <div class="container py-large">
+                <div class="section-header text-center">
+                    <span class="tag">Our Purpose</span>
+                    <h1>Human <span class="gradient-text">Augmentation</span></h1>
+                    <p style="max-width: 800px; margin: 0 auto 40px;">Our mission is to eliminate the friction between
+                        human thought and physical accomplishment. We bridge the gap between imagination and the
+                        multi-planetary frontier.</p>
+                </div>
+                <div class="mission-visual text-center pt-medium">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1200"
+                        alt="Human Augmentation Visual"
+                        style="border-radius: var(--radius-lg); width: 100%; max-width: 900px; height: 450px; object-fit: cover; box-shadow: 0 40px 80px rgba(0,0,0,0.6);">
+                </div>
+
+                <!-- Values & Roadmap -->
+                <div class="grid grid-3 gap-30 py-large">
+                    <div class="value-card">
+                        <img src="assets/vision.png" alt="Vision" class="value-card-img">
+                        <div class="p-medium">
+                            <h3>Vision</h3>
+                            <p style="font-size: 14px; color: var(--text-secondary);">To be the primary interface
+                                between humanity and the digital frontier across all planetary bodies.</p>
+                        </div>
+                    </div>
+                    <div class="value-card">
+                        <img src="assets/ethics.png" alt="Ethics" class="value-card-img">
+                        <div class="p-medium">
+                            <h3>Ethics</h3>
+                            <p style="font-size: 14px; color: var(--text-secondary);">Privacy is not a feature; it is a
+                                fundamental human right. Our AI is built on benevolent protocols.</p>
+                        </div>
+                    </div>
+                    <div class="value-card">
+                        <img src="assets/innovation.png" alt="Innovation" class="value-card-img">
+                        <div class="p-medium">
+                            <h3>Innovation</h3>
+                            <p style="font-size: 14px; color: var(--text-secondary);">We push the boundaries of physics
+                                to deliver artifacts that were once considered impossible.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap py-large">
+                    <div class="section-header text-center">
+                        <span class="tag">The Journey</span>
+                        <h2>Strategic <span class="gradient-text">Roadmap</span></h2>
+                    </div>
+                    <div class="roadmap-grid mt-large">
+                        <div class="roadmap-item">
+                            <span class="year">2026</span>
+                            <h4>Neural Mesh v1.0</h4>
+                            <p>Global deployment of terrestrial sync nodes and initial orbital relay setup.</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <span class="year">2027</span>
+                            <h4>Lunar Outpost Sync</h4>
+                            <p>Establishing high-bandwidth links with lunar research stations and mining colonies.</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <span class="year">2028</span>
+                            <h4>Mars Colony Link</h4>
+                            <p>Primary atmospheric entry for the first wave of Martian logistical drones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sustainability Commitment -->
+                <div class="sustainability-section py-large glass-card"
+                    style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; border: none; margin: 60px 0; border-radius: var(--radius-lg); overflow: hidden;">
+                    <div class="container text-center" style="padding: 60px 20px;">
+                        <span class="tag">Earth-Positive Link</span>
+                        <h2 style="color: #fff;">Sustainable <span class="gradient-text">Expansion</span></h2>
+                        <p style="color: #fff; max-width: 700px; margin: 20px auto 40px; opacity: 0.9;">We believe that
+                            the future of humanity must be green, even as it reaches for the stars. Our 'Earth-Positive
+                            Link' initiative ensures every orbital delivery is offset by planetary reforestation and
+                            atmosphere purification efforts.</p>
+
+                        <div class="grid grid-3 gap-30 mt-medium">
+                            <div class="eco-stat p-medium glass-card" style="background: rgba(255,255,255,0.05);">
+                                <h3 style="color: #00ff88; font-size: 32px;">110%</h3>
+                                <p style="color: #fff; opacity: 0.8;">Carbon Offset Ratio</p>
+                            </div>
+                            <div class="eco-stat p-medium glass-card" style="background: rgba(255,255,255,0.05);">
+                                <h3 style="color: #00ff88; font-size: 32px;">Zero</h3>
+                                <p style="color: #fff; opacity: 0.8;">Single-Use Components</p>
+                            </div>
+                            <div class="eco-stat p-medium glass-card" style="background: rgba(255,255,255,0.05);">
+                                <h3 style="color: #00ff88; font-size: 32px;">Solar</h3>
+                                <p style="color: #fff; opacity: 0.8;">Primary Energy Source</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership Section -->
+                <div class="leadership-section py-large mt-extralarge">
+                    <div class="section-header text-center">
+                        <span class="tag">The Visionaries</span>
+                        <h2>Executive <span class="gradient-text">Leadership</span></h2>
+                        <p>Meet the minds architecture the next era of human history.</p>
+                    </div>
+                    <div class="grid grid-4 gap-30 mt-large">
+                        <div class="leader-card text-center">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200"
+                                alt="CEO"
+                                style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-primary); margin-bottom: 20px;">
+                            <h4>Cyrus Vane</h4>
+                            <p style="font-size: 14px; color: var(--accent-primary);">Founder & CEO</p>
+                        </div>
+                        <div class="leader-card text-center">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200"
+                                alt="CTO"
+                                style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-primary); margin-bottom: 20px;">
+                            <h4>Dr. Elena Rossi</h4>
+                            <p style="font-size: 14px; color: var(--accent-primary);">Chief Technology Officer</p>
+                        </div>
+                        <div class="leader-card text-center">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200"
+                                alt="COO"
+                                style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-primary); margin-bottom: 20px;">
+                            <h4>Marcus Thorne</h4>
+                            <p style="font-size: 14px; color: var(--accent-primary);">Chief Operations Officer</p>
+                        </div>
+                        <div class="leader-card text-center">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200"
+                                alt="Design"
+                                style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-primary); margin-bottom: 20px;">
+                            <h4>Serephina Cho</h4>
+                            <p style="font-size: 14px; color: var(--accent-primary);">Lead Experience Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Partners -->
+                <div class="partners-section py-large">
+                    <div class="section-header text-center">
+                        <span class="tag">Ecosystem</span>
+                        <h2>Global <span class="gradient-text">Partners</span></h2>
+                    </div>
+                    <div class="grid grid-4 gap-60 mt-large items-center">
+                        <div class="partner text-center">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=200"
+                                alt="Orbital Net"
+                                style="width: 80px; height: 80px; border-radius: 20px; object-fit: cover; border: 2px solid #00f5ff; box-shadow: 0 0 15px rgba(0, 245, 255, 0.3); margin-bottom: 15px;">
+                            <h4>Orbital Net</h4>
+                        </div>
+                        <div class="partner text-center">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=200"
+                                alt="Quantum Labs"
+                                style="width: 80px; height: 80px; border-radius: 20px; object-fit: cover; border: 2px solid #bf5af2; box-shadow: 0 0 15px rgba(191, 90, 242, 0.3); margin-bottom: 15px;">
+                            <h4>Quantum Labs</h4>
+                        </div>
+                        <div class="partner text-center">
+                            <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=200"
+                                alt="BioSync Corp"
+                                style="width: 80px; height: 80px; border-radius: 20px; object-fit: cover; border: 2px solid #30d158; box-shadow: 0 0 15px rgba(48, 209, 88, 0.3); margin-bottom: 15px;">
+                            <h4>BioSync Corp</h4>
+                        </div>
+                        <div class="partner text-center">
+                            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=200"
+                                alt="Titan Logistics"
+                                style="width: 80px; height: 80px; border-radius: 20px; object-fit: cover; border: 2px solid #ff9f0a; box-shadow: 0 0 15px rgba(255, 159, 10, 0.3); margin-bottom: 15px;">
+                            <h4>Titan Logistics</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="section">
+            <div class="container">
+                <div class="shop-banner glass-card mb-large"
+                    style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; padding: 60px; border-radius: var(--radius-lg); text-align: left;">
+                    <span class="tag">Limited Offer</span>
+                    <h2 style="font-size: 36px;">Upgrade Your <span class="gradient-text">Neural Core</span></h2>
+                    <p style="color: #fff; margin: 20px 0;">Get 20% off on all V4 hardware upgrades this week. Sync
+                        faster, live better.</p>
+                    <button class="btn btn-primary">Claim Offer</button>
+                </div>
+
+                <div class="featured-categories grid grid-3 gap-30 mb-large">
+                    <div class="category-card glass-card card"
+                        style="height: 200px; padding: 0; overflow: hidden; position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?auto=format&fit=crop&q=80&w=800"
+                            alt="Neural" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+                        <div class="cat-label" style="position: absolute; bottom: 20px; left: 20px;">
+                            <h3 style="margin: 0;">Neural Tech</h3>
+                            <span style="font-size: 12px; color: var(--accent-primary);">View All &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="category-card glass-card card"
+                        style="height: 200px; padding: 0; overflow: hidden; position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=400"
+                            alt="Mobility" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+                        <div class="cat-label" style="position: absolute; bottom: 20px; left: 20px;">
+                            <h3 style="margin: 0;">Quantum Mobility</h3>
+                            <span style="font-size: 12px; color: var(--accent-primary);">View All &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="category-card glass-card card"
+                        style="height: 200px; padding: 0; overflow: hidden; position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&q=80&w=400"
+                            alt="Health" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+                        <div class="cat-label" style="position: absolute; bottom: 20px; left: 20px;">
+                            <h3 style="margin: 0;">Bio-Digital Health</h3>
+                            <span style="font-size: 12px; color: var(--accent-primary);">View All &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Philosophy Section -->
+                <div class="product-philosophy py-large mb-large">
+                    <div class="section-header text-center">
+                        <span class="tag">The Standards</span>
+                        <h2>The Hardware <span class="gradient-text">Philosophy</span></h2>
+                    </div>
+                    <div class="grid grid-3 gap-30 mt-large">
+                        <div class="philosophy-card glass-card text-center">
+                            <img src="bio_locked.png" alt="Bio-Locked Architecture" class="perk-img">
+                            <!-- Removed redundant icons for a cleaner, high-fidelity look -->
+                            <div class="philosophy-content">
+                                <h4>Bio-Locked Architecture</h4>
+                                <p style="font-size: 14px; color: var(--text-secondary);">Every piece of hardware is
+                                    uniquely keyed to your biometric signature. Unauthorized access is physically
+                                    impossible.</p>
+                            </div>
+                        </div>
+                        <div class="philosophy-card glass-card text-center">
+                            <img src="aegis_durability.png" alt="Aegis Durability" class="perk-img">
+                            <!-- Precision material macro for literal durability representation -->
+                            <div class="philosophy-content">
+                                <h4>Aegis Durability</h4>
+                                <p style="font-size: 14px; color: var(--text-secondary);">Built with graphene-reinforced
+                                    alloys, our artifacts are designed to withstand vacuum, extreme heat, and orbital
+                                    entry.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="philosophy-card glass-card text-center">
+                            <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=800"
+                                alt="Neural Synergy" class="perk-img">
+                            <div class="philosophy-content">
+                                <h4>Neural Synergy</h4>
+                                <p style="font-size: 14px; color: var(--text-secondary);">Zero-latency feedback ensures
+                                    your
+                                    hardware responds to your intent as fast as your own nervous system.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-tools">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="search" placeholder="Search artifacts..." oninput="renderProducts()">
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-btn active" onclick="setFilter('All', this)">All</button>
+                        <button class="filter-btn" onclick="setFilter('Wearables', this)">Wearables</button>
+                        <button class="filter-btn" onclick="setFilter('Mobility', this)">Mobility</button>
+                        <button class="filter-btn" onclick="setFilter('Home AI', this)">Home AI</button>
+                    </div>
+                </div>
+
+                <div class="product-grid" id="product-container">
+                    <!-- Products will be injected here -->
+                </div>
+
+                <!-- Limited Edition Showcase -->
+                <div class="limited-edition-showcase mt-extralarge glass-card p-large"
+                    style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 60px; align-items: center;">
+                    <div class="showcase-content">
+                        <span class="tag">Exclusive Series</span>
+                        <h2 style="font-size: 38px; margin: 15px 0;">Alpha <span class="gradient-text">Black
+                                Series</span></h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 30px;">Direct from the experimental labs,
+                            the Black Series features obsidian-grade finishes and unlocked neural limiters for the
+                            ultimate performance. Limited to 500 units globally.</p>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 40px;">
+                            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 15px;">
+                                <div style="width: 4px; height: 15px; background: var(--accent-primary);"></div>
+                                Hand-Polished Obsidian Finish
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 15px;">
+                                <div style="width: 4px; height: 15px; background: var(--accent-primary);"></div>
+                                Overclocked Sync-Kernel
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 15px;">
+                                <div style="width: 4px; height: 15px; background: var(--accent-primary);"></div>
+                                Serialized Laser Engraving
+                            </li>
+                        </ul>
+                        <button class="btn btn-primary">Enter Pre-Order Vault</button>
+                    </div>
+                    <div class="showcase-visual">
+                        <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&q=80&w=800"
+                            alt="Black Series"
+                            style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 30px 60px rgba(0,0,0,0.6);">
+                    </div>
+                </div>
+
+                <!-- Trust and Sustainability -->
+                <div class="shop-trust grid grid-3 gap-30 py-large mt-extralarge text-center">
+                    <div class="trust-item card glass-card" style="padding: 0; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=600"
+                            alt="Recyclable"
+                            style="width: 100%; height: 160px; object-fit: cover; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                        <div class="p-medium">
+                            <h4 style="margin-top: 0;">100% Recyclable</h4>
+                            <p style="font-size: 14px; color: var(--text-secondary);">All our hardware is built with
+                                sustainable, eco-friendly futuristic composites.</p>
+                        </div>
+                    </div>
+                    <div class="trust-item card glass-card" style="padding: 0; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=600"
+                            alt="Warranty"
+                            style="width: 100%; height: 160px; object-fit: cover; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                        <div class="p-medium">
+                            <h4 style="margin-top: 0;">Lifetime Warranty</h4>
+                            <p style="font-size: 14px; color: var(--text-secondary);">Every artifact comes with a
+                                lifetime neural-link hardware protection plan.</p>
+                        </div>
+                    </div>
+                    <div class="trust-item card glass-card" style="padding: 0; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&q=80&w=600"
+                            alt="Unboxing"
+                            style="width: 100%; height: 160px; object-fit: cover; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                        <div class="p-medium">
+                            <h4 style="margin-top: 0;">Secure Unboxing</h4>
+                            <p style="font-size: 14px; color: var(--text-secondary);">Biometric-locked packaging ensures
+                                you are the first to touch your artifact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="section">
+            <div class="container dashboard-layout">
+                <aside class="dashboard-sidebar">
+                    <div class="user-profile">
+                        <div class="user-avatar">AD</div>
+                        <div class="user-info">
+                            <h4>Admin User</h4>
+                            <span>Premium Member</span>
+                        </div>
+                    </div>
+                    <ul class="dash-nav">
+                        <li class="active"><i class="fa-solid fa-chart-line"></i> Overview</li>
+                        <li><i class="fa-solid fa-box"></i> Orders</li>
+                        <li><i class="fa-solid fa-cube"></i> Inventory</li>
+                        <li><i class="fa-solid fa-users"></i> Customers</li>
+                        <li><i class="fa-solid fa-gear"></i> Settings</li>
+                    </ul>
+                </aside>
+
+                <div class="dashboard-content">
+                    <div class="dash-header">
+                        <h2>Analytics Dashboard</h2>
+                        <div class="date-picker">
+                            <span>Last 30 Days</span>
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <span>Total Revenue</span>
+                                <h3 id="totalRevenue">$0.00</h3>
+                                <p class="trend up"><i class="fa-solid fa-arrow-trend-up"></i> +12.5%</p>
+                            </div>
+                            <div class="stat-icon rev"><i class="fa-solid fa-dollar-sign"></i></div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <span>Cart Items</span>
+                                <h3 id="totalCartCount">0</h3>
+                                <p class="trend up"><i class="fa-solid fa-arrow-trend-up"></i> +5.2%</p>
+                            </div>
+                            <div class="stat-icon ord"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <span>Inventory</span>
+                                <h3 id="totalProducts">0</h3>
+                                <p class="trend"><i class="fa-solid fa-cube"></i> Live</p>
+                            </div>
+                            <div class="stat-icon usr"><i class="fa-solid fa-box"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Analytics -->
+                    <div class="performance-section mt-large glass-card p-large">
+                        <div class="card-header">
+                            <h3>Sync Performance <span class="badge status-success">Live</span></h3>
+                            <div class="chart-legend">
+                                <span style="font-size: 12px; color: var(--text-secondary);"><i
+                                        class="fa-solid fa-circle"
+                                        style="color: var(--accent-primary); font-size: 8px;"></i> Upload</span>
+                                <span style="font-size: 12px; color: var(--text-secondary); margin-left: 15px;"><i
+                                        class="fa-solid fa-circle"
+                                        style="color: var(--accent-secondary); font-size: 8px;"></i> Download</span>
+                            </div>
+                        </div>
+                        <div class="mock-chart mt-medium"
+                            style="height: 200px; display: flex; align-items: flex-end; gap: 10px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.05); position: relative;">
+                            <!-- Vertical bars representing a chart -->
+                            <div
+                                style="flex: 1; height: 60%; background: var(--accent-primary); border-radius: 4px 4px 0 0; opacity: 0.6;">
+                            </div>
+                            <div
+                                style="flex: 1; height: 85%; background: var(--accent-primary); border-radius: 4px 4px 0 0; opacity: 0.6;">
+                            </div>
+                            <div
+                                style="flex: 1; height: 45%; background: var(--accent-primary); border-radius: 4px 4px 0 0; opacity: 0.6;">
+                            </div>
+                            <div
+                                style="flex: 1; height: 70%; background: var(--accent-primary); border-radius: 4px 4px 0 0; opacity: 0.6;">
+                            </div>
+                            <div
+                                style="flex: 1; height: 95%; background: var(--accent-primary); border-radius: 4px 4px 0 0; opacity: 0.6;">
+                            </div>
+                            <div
+                                style="flex: 1; height: 40%; background: var(--accent-primary); border-radius: 4px 4px 0 0; opacity: 0.6;">
+                            </div>
+                            <div
+                                style="flex: 1; height: 75%; background: var(--accent-primary); border-radius: 4px 4px 0 0; opacity: 0.6;">
+                            </div>
+                            <div
+                                style="flex: 1; height: 55%; background: var(--accent-primary); border-radius: 4px 4px 0 0; opacity: 0.6;">
+                            </div>
+                            <div
+                                style="flex: 1; height: 90%; background: var(--accent-primary); border-radius: 4px 4px 0 0; opacity: 1; box-shadow: 0 0 20px var(--accent-primary);">
+                            </div>
+                            <div
+                                style="flex: 1; height: 65%; background: var(--accent-primary); border-radius: 4px 4px 0 0; opacity: 0.6;">
+                            </div>
+                        </div>
+                        <div class="chart-labels mt-xs"
+                            style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted);">
+                            <span>00:00</span>
+                            <span>06:00</span>
+                            <span>12:00</span>
+                            <span>18:00</span>
+                            <span>24:00</span>
+                        </div>
+                    </div>
+
+                    <div class="recent-orders">
+                        <div class="card-header">
+                            <h3>Recent Operations</h3>
+                            <button class="btn-text">View All</button>
+                        </div>
+                        <table class="dash-table">
+                            <thead>
+                                border-bottom
+                                <tr>
+                                    <th>Operation</th>
+                                    <th>Status</th>
+                                    <th>Value</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AI Watch Sync</td>
+                                    <td><span class="badge status-success">Completed</span></td>
+                                    <td>$249.00</td>
+                                    <td>2 mins ago</td>
+                                </tr>
+                                <tr>
+                                    <td>Gravity Shoe Order</td>
+                                    <td><span class="badge status-pending">Processing</span></td>
+                                    <td>$899.00</td>
+                                    <td>15 mins ago</td>
+                                </tr>
+                                <tr>
+                                    <td>Drone Maintenance</td>
+                                    <td><span class="badge status-success">Healthy</span></td>
+                                    <td>--</td>
+                                    <td>1 hour ago</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="dash-footer-widgets grid grid-3 gap-30 mt-large">
+                        <div class="health-widget card glass-card">
+                            <h4><i class="fa-solid fa-heart-pulse" style="color: var(--success);"></i> System Health
+                            </h4>
+                            <div class="mt-medium">
+                                <p style="font-size: 14px; margin-bottom: 8px;">Neural Sync: <span
+                                        class="badge status-success">Optimal</span></p>
+                                <p style="font-size: 14px; margin-bottom: 8px;">Drone Status: <span
+                                        class="badge status-success">Ready</span></p>
+                                <p style="font-size: 14px;">Wallet Link: <span
+                                        class="badge status-success">Secure</span></p>
+                            </div>
+                        </div>
+                        <div class="optimization-widget card glass-card">
+                            <h4><i class="fa-solid fa-microchip" style="color: var(--accent-primary);"></i> Resource
+                                Optimization</h4>
+                            <div class="mt-medium">
+                                <div class="prog-group mb-medium">
+                                    <div
+                                        style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 5px;">
+                                        <span>CPU Usage</span>
+                                        <span>42%</span>
+                                    </div>
+                                    <div
+                                        style="height: 6px; background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden;">
+                                        <div style="width: 42%; height: 100%; background: var(--accent-primary);"></div>
+                                    </div>
+                                </div>
+                                <div class="prog-group">
+                                    <div
+                                        style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 5px;">
+                                        <span>Memory Allocation</span>
+                                        <span>78%</span>
+                                    </div>
+                                    <div
+                                        style="height: 6px; background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden;">
+                                        <div style="width: 78%; height: 100%; background: var(--accent-secondary);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert-widget card glass-card">
+                            <h4><i class="fa-solid fa-bell" style="color: var(--warning);"></i> Active Alerts</h4>
+                            <div class="mt-medium">
+                                <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 8px;"><i
+                                        class="fa-solid fa-circle-info" style="margin-right: 8px;"></i> No critical
+                                    threats detected.</p>
+                                <p style="font-size: 13px; color: var(--text-secondary);"><i class="fa-solid fa-wrench"
+                                        style="margin-right: 8px;"></i> Scheduled relay maintenance in 4h.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Auth Section -->
+        <section id="auth" class="section">
+            <div class="container py-large">
+                <div class="auth-wrapper glass-card active" id="login-form">
+                    <div class="auth-header text-center">
+                        <h2>Welcome <span class="gradient-text">Back</span></h2>
+                        <p>Access your AntiGravity neuro-sync dashboard.</p>
+                    </div>
+                    <form class="auth-form" onsubmit="handleLogin(event)">
+                        <div class="form-group">
+                            <label>Neural ID (Email)</label>
+                            <input type="email" placeholder="name@future.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Sync Key (Password)</label>
+                            <input type="password" placeholder="••••••••" required>
+                        </div>
+                        <div class="auth-options" style="margin-bottom: 20px; text-align: right; font-size: 14px;">
+                            <span onclick="toggleAuth('forgot')"
+                                style="color: var(--accent-primary); cursor: pointer;">Forgot Sync Key?</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Initialize Sync</button>
+                        <p class="auth-switch">Don't have an ID? <span onclick="toggleAuth('register')">Register
+                                Now</span></p>
+                    </form>
+                    <div class="auth-trust mt-medium text-center">
+                        <p style="font-size: 12px; color: var(--text-muted);"><i class="fa-solid fa-shield-check"></i>
+                            Secured by Aegis Quantum Firewall v5.2</p>
+                    </div>
+                </div>
+
+                <div class="auth-wrapper glass-card" id="register-form" style="display: none;">
+                    <div class="auth-header text-center">
+                        <h2>New <span class="gradient-text">Presence</span></h2>
+                        <p>Initialize your multi-planetary citizen ID.</p>
+                    </div>
+                    <form class="auth-form" onsubmit="handleRegister(event)">
+                        <div class="form-group">
+                            <label>Full Legal Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Neural ID (Email)</label>
+                            <input type="email" placeholder="name@future.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Sync Key (Password)</label>
+                            <input type="password" placeholder="••••••••" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Establish Presence</button>
+                        <p class="auth-switch">Already synced? <span onclick="toggleAuth('login')">Initialize
+                                Sync</span></p>
+                    </form>
+                </div>
+
+                <div class="auth-wrapper glass-card" id="forgot-form" style="display: none;">
+                    <div class="auth-header text-center">
+                        <h2>Sync <span class="gradient-text">Recovery</span></h2>
+                        <p>Retrieve your lost neural encryption keys.</p>
+                    </div>
+                    <form class="auth-form" onsubmit="handleForgot(event)">
+                        <div class="form-group">
+                            <label>Neural ID (Email)</label>
+                            <input type="email" placeholder="name@future.com" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Request Recovery OTP</button>
+                        <p class="auth-switch">Remembered? <span onclick="toggleAuth('login')">Back to Sync</span></p>
+                    </form>
+                </div>
+
+                <div class="auth-wrapper glass-card" id="otp-form" style="display: none;">
+                    <div class="auth-header text-center">
+                        <h2>Neural <span class="gradient-text">Verification</span></h2>
+                        <p>Enter the 4-digit sync-code sent to your link.</p>
+                    </div>
+                    <form class="auth-form" onsubmit="handleOTP(event)">
+                        <div class="otp-inputs"
+                            style="display:flex; justify-content:center; gap:15px; margin-bottom: 25px;">
+                            <input type="text" maxlength="1" id="otp1" onkeyup="moveFocus(this, 'otp2')" required
+                                style="width: 50px; height: 60px; text-align:center; font-size:24px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--accent-primary);">
+                            <input type="text" maxlength="1" id="otp2" onkeyup="moveFocus(this, 'otp3')" required
+                                style="width: 50px; height: 60px; text-align:center; font-size:24px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--accent-primary);">
+                            <input type="text" maxlength="1" id="otp3" onkeyup="moveFocus(this, 'otp4')" required
+                                style="width: 50px; height: 60px; text-align:center; font-size:24px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--accent-primary);">
+                            <input type="text" maxlength="1" id="otp4" required
+                                style="width: 50px; height: 60px; text-align:center; font-size:24px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--accent-primary);">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Verify Identity</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Profile Section -->
+        <section id="profile" class="section">
+            <div class="container py-large">
+                <div class="profile-layout glass-card">
+                    <div class="profile-sidebar">
+                        <div class="profile-avatar-large">JD</div>
+                        <h3>John Doe</h3>
+                        <p>Sync Status: <span class="status-online">Optimal</span></p>
+                        <hr class="nav-divider">
+                        <ul class="profile-nav">
+                            <li class="active" onclick="switchProfileTab('overview')"><i
+                                    class="fa-solid fa-user-gear"></i> Account</li>
+                            <li onclick="switchProfileTab('id-card')"><i class="fa-solid fa-id-card"></i> Neural ID</li>
+                            <li onclick="switchProfileTab('wallet')"><i class="fa-solid fa-wallet"></i> Neural Wallet
+                            </li>
+                            <li onclick="switchProfileTab('pads')"><i class="fa-solid fa-satellite-dish"></i> Delivery
+                                Pads</li>
+                            <li onclick="switchProfileTab('rewards')"><i class="fa-solid fa-users-rays"></i> Human
+                                Referral</li>
+                            <li onclick="switchProfileTab('orders')"><i class="fa-solid fa-clock-rotate-left"></i> Order
+                                History</li>
+                            <li onclick="switchProfileTab('security')"><i class="fa-solid fa-shield-halved"></i>
+                                Security</li>
+                            <li class="logout-btn" onclick="handleLogout()"><i class="fa-solid fa-power-off"></i>
+                                Terminate Session</li>
+                        </ul>
+                    </div>
+                    <div class="profile-content">
+                        <div id="p-overview" class="profile-tab active">
+                            <h2>Account <span class="gradient-text">Overview</span></h2>
+                            <div class="profile-info-grid">
+                                <div class="info-item">
+                                    <label>Legal Name</label>
+                                    <p>John Doe</p>
+                                </div>
+                                <div class="info-item">
+                                    <label>Neural ID</label>
+                                    <p>j.doe@neuralmail.com</p>
+                                </div>
+                                <div class="info-item">
+                                    <label>Base Location</label>
+                                    <p>Orbital Station 7, Sector B</p>
+                                </div>
+                                <div class="info-item">
+                                    <label>Account Tier</label>
+                                    <p class="accent-text">Elite Pioneer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="p-id-card" class="profile-tab" style="display:none;">
+                            <h2>Neural <span class="gradient-text">Identity Card</span></h2>
+                            <div class="id-card-visual glass-card fade-in">
+                                <div class="id-card-glow"></div>
+                                <div class="id-card-content">
+                                    <div class="id-card-header">
+                                        <div class="logo-mini">AG</div>
+                                        <div class="id-chip"></div>
+                                    </div>
+                                    <div class="id-card-body">
+                                        <div class="user-photo">JD</div>
+                                        <div class="user-data">
+                                            <h3>JOHN DOE</h3>
+                                            <p class="id-number">#NC-8829-XQ</p>
+                                            <div class="data-grid">
+                                                <div class="data-cell"><label>CLASS</label><span>PIONEER</span></div>
+                                                <div class="data-cell"><label>SYNC</label><span>SYNC-LEVEL 5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="id-card-footer">
+                                        <div class="barcode">|| ||| | ||| || | ||</div>
+                                        <span>EST. 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline py-xs mt-large"
+                                onclick="alert('Generating high-res holographic print...')">Download Digital ID</button>
+                        </div>
+
+                        <div id="p-rewards" class="profile-tab" style="display:none;">
+                            <h2>Human <span class="gradient-text">Referral Program</span></h2>
+                            <div class="referral-banner card glass-card">
+                                <i class="fa-solid fa-gift"></i>
+                                <h3>Give 500 NC, Get 1,000 NC</h3>
+                                <p>Refer a fellow human and receive 1,000 Neural Credits once they complete their first
+                                    neuro-sync.</p>
+                            </div>
+                            <div class="referral-code-box py-medium">
+                                <label>Your Unique Referral Code</label>
+                                <div class="code-input-group">
+                                    <input type="text" value="QUANTUM-HUMAN-2026" readonly id="refCode">
+                                    <button class="btn btn-primary" onclick="copyRefCode()">Copy Code</button>
+                                </div>
+                            </div>
+                            <div class="referral-stats grid grid-3 gap-20">
+                                <div class="stat-card card">
+                                    <label>Total Invited</label>
+                                    <h4>12 Users</h4>
+                                </div>
+                                <div class="stat-card card">
+                                    <label>Sync Pending</label>
+                                    <h4>3 Users</h4>
+                                </div>
+                                <div class="stat-card card">
+                                    <label>Total Earned</label>
+                                    <h4>9,000 NC</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="p-wallet" class="profile-tab" style="display:none;">
+                            <h2>Neural <span class="gradient-text">Wallet</span></h2>
+                            <div class="wallet-card card glass-card">
+                                <div class="wallet-balance">
+                                    <label>Current Credits</label>
+                                    <h1 id="neuralBalance">12,450.00 <span class="currency">NC</span></h1>
+                                </div>
+                                <div class="wallet-actions">
+                                    <button class="btn btn-primary" onclick="alert('Syncing with Lunar Bank...')">Add
+                                        Credits</button>
+                                    <button class="btn btn-outline"
+                                        onclick="alert('Generating transaction report...')">Statement</button>
+                                </div>
+                            </div>
+                            <div class="transaction-list py-medium">
+                                <h3>Recent Transactions</h3>
+                                <div class="order-item card">
+                                    <div class="order-meta">
+                                        <span>Sync ID: #TX-9021</span>
+                                        <span>Feb 20, 2026</span>
+                                    </div>
+                                    <div class="order-details">
+                                        <p>Credit Top-up (Bank of Mars)</p>
+                                        <span class="price success-text">+5,000.00 NC</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="p-pads" class="profile-tab" style="display:none;">
+                            <div class="tab-header-flex">
+                                <h2>Delivery <span class="gradient-text">Pads</span></h2>
+                                <button class="btn btn-secondary btn-sm"
+                                    onclick="alert('Scanning for available pads...')">Add New Pad</button>
+                            </div>
+                            <div class="pad-list">
+                                <div class="pad-item card">
+                                    <div class="pad-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+                                    <div class="pad-info">
+                                        <h4>Home Pad Alpha</h4>
+                                        <p>Coordinate: 40.7128° N, 74.0060° W</p>
+                                        <span class="badge status-success">Primary</span>
+                                    </div>
+                                    <div class="pad-actions">
+                                        <button class="icon-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button class="icon-btn danger-text"><i class="fa-solid fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="pad-item card">
+                                    <div class="pad-icon"><i class="fa-solid fa-building"></i></div>
+                                    <div class="pad-info">
+                                        <h4>Orbital Office Beta</h4>
+                                        <p>Coordinate: Station 7, Level 4, Pad 2</p>
+                                    </div>
+                                    <div class="pad-actions">
+                                        <button class="icon-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button class="icon-btn danger-text"><i class="fa-solid fa-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="p-orders" class="profile-tab" style="display:none;">
+                            <h2>Purchase <span class="gradient-text">History</span></h2>
+                            <div class="order-list">
+                                <div class="order-item card">
+                                    <div class="order-meta">
+                                        <span>Order #AG-2941</span>
+                                        <span>Feb 18, 2026</span>
+                                    </div>
+                                    <div class="order-details">
+                                        <p>Neural Watch Pro</p>
+                                        <span class="price">$249.00</span>
+                                        <span class="badge status-success">Delivered</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News/Blog Section -->
+        <section id="news" class="section">
+            <div class="container py-large">
+                <div class="section-header text-center">
+                    <span class="tag">Neural Updates</span>
+                    <h1>Galactic Tech News</h1>
+                    <p>Stay updated with the latest breakthroughs in AntiGravity and AI tech.</p>
+                </div>
+
+                <!-- Featured Story -->
+                <div class="featured-news glass-card mb-large mt-large"
+                    style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; padding: 0; overflow: hidden; align-items: center;">
+                    <div class="featured-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=1200'); height: 450px; background-size: cover; background-position: center;">
+                    </div>
+                    <div class="featured-body p-large">
+                        <span class="tag">Breaking Story</span>
+                        <h2 style="font-size: 32px; margin: 15px 0;">The Era of <span
+                                class="gradient-text">Sub-Sentience</span></h2>
+                        <p style="color: var(--text-secondary); line-height: 1.8;">AntiGravity Labs announces the
+                            successful deployment of the 'Omega Link,' the first non-invasive neural interface capable
+                            of 128-bit consciousness-hardware mirroring at sub-atomic scales.</p>
+                        <div class="mt-medium" style="display: flex; align-items: center; gap: 15px;">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=100"
+                                style="width: 40px; height: 40px; border-radius: 50%;">
+                            <div>
+                                <h4 style="font-size: 14px; margin: 0;">Serephina Cho</h4>
+                                <p style="font-size: 12px; color: var(--text-muted); margin: 0;">Senior Tech Analyst</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-medium">Read Full Breakdown</button>
+                    </div>
+                </div>
+                <div class="news-grid">
+                    <article class="news-card card glass-card fade-in">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=600"
+                                alt="Mars Colony" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">Feb 21, 2026</span>
+                            <h3>Mars Colony Alpha reaches Link-Sync</h3>
+                            <p>For the first time in history, our Martian residents have achieved 0.001ms latency with
+                                Earth-bound neural servers.</p>
+                            <a href="#" class="btn-link">Read Full Report <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="news-card card glass-card fade-in">
+                        <div class="news-img" style="height: 250px; overflow: hidden; background: #05070a;">
+                            <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&q=80&w=800"
+                                alt="V3 AntiGravity Pods"
+                                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">Feb 19, 2026</span>
+                            <h3>V3 AntiGravity Pods: Now 40% Lighter</h3>
+                            <p>Engineering breakthrough allows for more efficient hover-car propulsion with reduced
+                                energy requirements.</p>
+                            <a href="#" class="btn-link">Read Tech Specs <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="news-card card glass-card fade-in delay-2">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=600"
+                                alt="Quantum Encryption" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">Feb 15, 2026</span>
+                            <h3>Quantum Encryption v5.0 Released</h3>
+                            <p>Our latest security update introduces "Temporal Salting," making your neural keys
+                                impossible to crack even with future computers.</p>
+                            <a href="#" class="btn-link">Security Brief <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="news-card card glass-card fade-in delay-3">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=600"
+                                alt="Pioneer Summit" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">Feb 10, 2026</span>
+                            <h3>Annual Pioneer Summit Highlights</h3>
+                            <p>Relive the best moments from our global summit where the "Neural Link" protocol was first
+                                demonstrated live.</p>
+                            <a href="#" class="btn-link">Watch Replay <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="news-card card glass-card fade-in">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&q=80&w=600"
+                                alt="Jovian Moons" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">Feb 05, 2026</span>
+                            <h3>Expanding to the Jovian Moons</h3>
+                            <p>AntiGravity Logistics has secured rights to build synchronization hubs on Europa and
+                                Callisto by 2030.</p>
+                            <a href="#" class="btn-link">Logistics Roadmap <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="news-card card glass-card fade-in">
+                        <div class="news-img" style="height: 250px; overflow: hidden; background: #05070a;">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                                alt="Software Core"
+                                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">Jan 28, 2026</span>
+                            <h3>Artifact v4: The Software Core</h3>
+                            <p>A deep dive into the code that powers our latest line of AI assistants and neural
+                                watches.</p>
+                            <a href="#" class="btn-link">Developer Docs <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Technical Papers List -->
+                <div class="tech-papers glass-card mt-extralarge p-large">
+                    <div class="section-header">
+                        <span class="tag">Open Access</span>
+                        <h2>Technical <span class="gradient-text">Publications</span></h2>
+                    </div>
+                    <div class="papers-list mt-large">
+                        <div class="paper-item"
+                            style="display: flex; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <div>
+                                <h4 style="margin: 0;">Superconductivity at Room Temperature: A Survey</h4>
+                                <p style="font-size: 14px; color: var(--text-muted); margin: 5px 0;">Published by Dr.
+                                    Elena Rossi, Chief Tech Officer</p>
+                            </div>
+                            <button class="btn btn-outline btn-sm">Download PDF</button>
+                        </div>
+                        <div class="paper-item"
+                            style="display: flex; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <div>
+                                <h4 style="margin: 0;">Ethical Boundaries of Synthesized Consciousness</h4>
+                                <p style="font-size: 14px; color: var(--text-muted); margin: 5px 0;">Published by The AG
+                                    Ethics Committee</p>
+                            </div>
+                            <button class="btn btn-outline btn-sm">Download PDF</button>
+                        </div>
+                        <div class="paper-item" style="display: flex; justify-content: space-between; padding: 20px 0;">
+                            <div>
+                                <h4 style="margin: 0;">Multi-Planetary Latency Mitigation via Orbital Relays</h4>
+                                <p style="font-size: 14px; color: var(--text-muted); margin: 5px 0;">Published by
+                                    Logistics Engineering Team</p>
+                            </div>
+                            <button class="btn btn-outline btn-sm">Download PDF</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section id="support" class="section">
+            <div class="container py-large">
+                <div class="support-layout">
+                    <div class="support-info">
+                        <span class="tag">Help Center</span>
+                        <h1>Human <span class="gradient-text">Support</span></h1>
+                        <p>Need assistance with your neural link or orbital delivery? Our team is available 24/7 to
+                            ensure your experience is seamless.</p>
+                    </div>
+                    <div class="support-form-box glass-card p-large">
+                        <h3>Open an Incident Ticket</h3>
+                        <form class="auth-form mt-medium">
+                            <div class="form-group">
+                                <label>Your Neural ID (Email)</label>
+                                <input type="text" placeholder="name@future.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Detailed Description</label>
+                                <textarea placeholder="Describe the anomaly..." rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">Transmit Ticket</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="faq-section mt-extralarge">
+                    <div class="section-header text-center">
+                        <span class="tag">Knowledge Base</span>
+                        <h2>Common <span class="gradient-text">Inquiries</span></h2>
+                    </div>
+                    <div class="grid grid-2 gap-30 mt-large">
+                        <div class="faq-card card glass-card">
+                            <h4>How do I sync my new Neuro-watch?</h4>
+                            <p>Ensure your bio-signature is verified in the Profile section, then hold the watch against
+                                your primary pulse point for 10 seconds.</p>
+                        </div>
+                        <div class="faq-card card glass-card">
+                            <h4>What is the delivery radius for Orbital Drones?</h4>
+                            <p>Our current generation drones support a 500km radius from any primary orbital relay
+                                station or terrestrial hub.</p>
+                        </div>
+                        <div class="faq-card card glass-card">
+                            <h4>Is the Neural Link safe for all ages?</h4>
+                            <p>Yes, the link uses non-invasive electromagnetic resonance certified for use by all humans
+                                aged 12 and above.</p>
+                        </div>
+                        <div class="faq-card card glass-card">
+                            <h4>How can I refund a digital artifact?</h4>
+                            <p>Digital downloads are eligible for a 24-hour refund window if the neural-sync has not
+                                been initiated.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Section -->
+        <section id="careers" class="section">
+            <div class="container py-large">
+                <div class="careers-banner glass-card mb-large"
+                    style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; padding: 100px 60px; border-radius: var(--radius-lg); text-align: center;">
+                    <span class="tag">Join the Crew</span>
+                    <h1 style="color: #fff;">Join Our <span class="gradient-text">Mission</span></h1>
+                    <p style="color: #fff; max-width: 600px; margin: 20px auto 0;">Shape the future of AI-powered
+                        anti-gravity
+                        commerce. We're looking for pioneers to bridge the gap between human thought and the
+                        multi-planetary
+                        frontier.</p>
+                </div>
+
+                <div class="job-grid grid grid-3 gap-30 mt-large">
+                    <div class="job-card featured-job glass-card fade-in" style="padding:0; overflow:hidden;">
+                        <img src="assets/career-logistics.png" alt="Orbital Logistics Engineer" class="job-card-img">
+                        <div
+                            style="padding:30px; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                            <div class="job-card-body">
+                                <h3 style="margin-top:0;">Orbital Logistics Engineer</h3>
+                                <p style="font-size: 14px; color: var(--text-secondary); margin-top: 10px;">Master the
+                                    vacuum. Orchestrate the flow of neuro-artifacts between the Lunar Relay and
+                                    terrestrial hubs using automated swarm logistics.</p>
+                            </div>
+                            <div class="job-card-footer mt-large"
+                                style="border-top: 1px solid rgba(255,255,255,0.05); padding-top:20px;">
+                                <span class="tag-sm"><i class="fa-solid fa-location-dot"></i> Station 7 / Lunar</span>
+                                <button class="btn btn-primary btn-sm">Join the Sync</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="job-card featured-job glass-card fade-in delay-1" style="padding:0; overflow:hidden;">
+                        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=800"
+                            alt="Neural Ethicist" class="job-card-img">
+                        <div
+                            style="padding:30px; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                            <div class="job-card-body">
+                                <h3 style="margin-top:0;">Neural Ethicist</h3>
+                                <p style="font-size: 14px; color: var(--text-secondary); margin-top: 10px;">Guardian of
+                                    the ghost in the machine. Define the moral boundaries for non-invasive consciousness
+                                    mirroring and sub-sentient AI protocols.</p>
+                            </div>
+                            <div class="job-card-footer mt-large"
+                                style="border-top: 1px solid rgba(255,255,255,0.05); padding-top:20px;">
+                                <span class="tag-sm"><i class="fa-solid fa-location-dot"></i> Earth HQ</span>
+                                <button class="btn btn-primary btn-sm">Join the Sync</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="job-card featured-job glass-card fade-in delay-2" style="padding:0; overflow:hidden;">
+                        <img src="assets/career-ai.png" alt="AI Consciousness Designer" class="job-card-img">
+                        <div
+                            style="padding:30px; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                            <div class="job-card-body">
+                                <h3 style="margin-top:0;">AI Consciousness Designer</h3>
+                                <p style="font-size: 14px; color: var(--text-secondary); margin-top: 10px;">Architect of
+                                    digital souls. Bridge the gap between human perception and synthetic processing to
+                                    create truly intuitive AI companions.</p>
+                            </div>
+                            <div class="job-card-footer mt-large"
+                                style="border-top: 1px solid rgba(255,255,255,0.05); padding-top:20px;">
+                                <span class="tag-sm"><i class="fa-solid fa-location-dot"></i> Mars Outpost</span>
+                                <button class="btn btn-primary btn-sm">Join the Sync</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departments -->
+                <div class="departments py-large mt-extralarge">
+                    <div class="section-header text-center">
+                        <span class="tag">The Teams</span>
+                        <h2>Core <span class="gradient-text">Departments</span></h2>
+                        <p>Find your place in our diverse ecosystem of specialized units.</p>
+                    </div>
+                    <div class="grid grid-4 gap-20 mt-large">
+                        <div class="dept-card card">
+                            <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=800"
+                                alt="Engineering" class="dept-card-img">
+                            <div class="dept-overlay">
+                                <h4 style="margin: 0; color: var(--accent-primary); font-size: 18px;">Engineering</h4>
+                                <p
+                                    style="font-size: 13px; color: #fff; margin-top: 10px; line-height: 1.5; opacity: 0.9;">
+                                    Building the backbone of autonomous hardware.</p>
+                            </div>
+                        </div>
+                        <div class="dept-card card">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+                                alt="Neural Ethics" class="dept-card-img">
+                            <div class="dept-overlay">
+                                <h4 style="margin: 0; color: var(--accent-primary); font-size: 18px;">Neural Ethics</h4>
+                                <p
+                                    style="font-size: 13px; color: #fff; margin-top: 10px; line-height: 1.5; opacity: 0.9;">
+                                    Guiding the moral framework of AI interaction.</p>
+                            </div>
+                        </div>
+                        <div class="dept-card card">
+                            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=800"
+                                alt="Logistics" class="dept-card-img">
+                            <div class="dept-overlay">
+                                <h4 style="margin: 0; color: var(--accent-primary); font-size: 18px;">Logistics</h4>
+                                <p
+                                    style="font-size: 13px; color: #fff; margin-top: 10px; line-height: 1.5; opacity: 0.9;">
+                                    Managing the flow of artifacts across the solar system.</p>
+                            </div>
+                        </div>
+                        <div class="dept-card card">
+                            <img src="https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&q=80&w=800"
+                                alt="AI Research" class="dept-card-img">
+                            <div class="dept-overlay">
+                                <h4 style="margin: 0; color: var(--accent-primary); font-size: 18px;">AI Research</h4>
+                                <p
+                                    style="font-size: 13px; color: #fff; margin-top: 10px; line-height: 1.5; opacity: 0.9;">
+                                    Developing the next generation of sentient assistants.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hiring Process -->
+                <div class="hiring-process py-large">
+                    <div class="section-header text-center">
+                        <span class="tag">The Journey</span>
+                        <h2>The <span class="gradient-text">Hiring Process</span></h2>
+                    </div>
+                    <div class="roadmap-grid mt-large">
+                        <div class="roadmap-item">
+                            <span class="year">Step 01</span>
+                            <h4>Neural Scan</h4>
+                            <p>Initial assessment of your cognitive alignment and core technical competencies.</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <span class="year">Step 02</span>
+                            <h4>Technical Sync</h4>
+                            <p>Deep-dive collaboration with our lead architects on real-world logistical puzzles.</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <span class="year">Step 03</span>
+                            <h4>Final Calibration</h4>
+                            <p>Calibration of your vision with our multi-planetary goals and mission protocols.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="life-at-ag mt-extralarge">
+                    <div class="section-header text-center">
+                        <span class="tag">The Culture</span>
+                        <h2>Life at <span class="gradient-text">AntiGravity</span></h2>
+                    </div>
+                    <div class="culture-grid grid grid-3 gap-20 mt-large">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=400"
+                            alt="Culture 1" style="border-radius: 10px; width: 100%; height: 250px; object-fit: cover;">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=400"
+                            alt="Culture 2" style="border-radius: 10px; width: 100%; height: 250px; object-fit: cover;">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=400"
+                            alt="Culture 3" style="border-radius: 10px; width: 100%; height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="perks-grid mt-large grid grid-4 gap-20">
+                        <div class="perk-card text-center">
+                            <i class="fa-solid fa-plane-up"></i>
+                            <p>Global Travel</p>
+                        </div>
+                        <div class="perk-card text-center">
+                            <i class="fa-solid fa-brain"></i>
+                            <p>Neural Credits</p>
+                        </div>
+                        <div class="perk-card text-center">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <p>Life Extension</p>
+                        </div>
+                        <div class="perk-card text-center">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Flexible Sync</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Employee Spotlight -->
+                <div class="spotlight-section py-large mt-extralarge">
+                    <div class="container">
+                        <div class="glass-card p-large spotlight-card grid grid-2 gap-60 items-center">
+                            <div class="spotlight-img-container">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800"
+                                    alt="Dr. Aris Thorne" class="spotlight-img">
+                            </div>
+                            <div class="spotlight-content">
+                                <span class="tag">Employee Spotlight</span>
+                                <h2 style="font-size: 32px;">"Working at AntiGravity isn't just a job; it's a
+                                    contribution to the <span class="gradient-text">evolution of humanity</span>."</h2>
+                                <p class="mt-medium" style="font-style: italic; color: var(--text-secondary);">"Every
+                                    day, we solve problems that don't even exist yet. The level of autonomy and creative
+                                    freedom here is unlike anywhere else in the galaxy."</p>
+                                <div class="mt-medium">
+                                    <strong>Dr. Aris Thorne</strong>
+                                    <p style="font-size: 14px; color: var(--accent-primary);">Lead Neural Architect</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- UI Overlay Components -->
+    <div class="cart-drawer-overlay" onclick="toggleCart()"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Your Artifacts</h3>
+            <button class="close-btn" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items injected here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Estimated Total:</span>
+                <h4 id="cartTotalPrice">$0.00</h4>
+            </div>
+            <button class="btn btn-primary w-full" onclick="checkout()">Secure Checkout <i
+                    class="fa-solid fa-shield-check"></i></button>
+        </div>
+    </div>
+
+
+    <footer class="footer py-large">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">🚀 AntiGravity AI</div>
+                <p>Leading the way in autonomous electronics and lifestyle hardware for the multi-planetary future.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#">AI Wearables</a></li>
+                    <li><a href="#">Mobility</a></li>
+                    <li><a href="#">Home Hub</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Missions</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Join our mission for the latest tech updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit" class="btn btn-primary">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2026 AntiGravity AI Store. All Rights Reserved. Built for tomorrow.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
